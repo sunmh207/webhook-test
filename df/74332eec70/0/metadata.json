@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.4.6",
+  "checkpoint_id": "df74332eec70",
+  "session_id": "ses_370252600ffe3R2YdZy6UXwtqU",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-24T13:34:38.699416Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "yanghui.py"
+  ],
+  "agent": "OpenCode",
+  "turn_id": "0cce8b65a906",
+  "token_usage": {
+    "input_tokens": 1169,
+    "cache_creation_tokens": 1650,
+    "cache_read_tokens": 68452,
+    "output_tokens": 720,
+    "api_call_count": 6
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-24T13:34:38.680539Z",
+    "agent_lines": 12,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 12,
+    "agent_percentage": 100
+  }
+}
