@@ -1,0 +1,662 @@
+{
+  "info": {
+    "id": "ses_36fff781effeQzIdUBtzUiXS4q",
+    "slug": "shiny-cactus",
+    "version": "1.1.39",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/webhook-test",
+    "title": "README 更新：演示项目介绍",
+    "time": {
+      "created": 1771942479841,
+      "updated": 1771942530683
+    },
+    "summary": {
+      "additions": 1,
+      "deletions": 8,
+      "files": 1
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "id": "msg_c900087ed001ZwHAxOtkmaIgNC",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "user",
+        "time": {
+          "created": 1771942479865
+        },
+        "summary": {
+          "title": "README update: describe demo project nature",
+          "diffs": [
+            {
+              "file": "README.md",
+              "before": "# webhook-test\nThis is a test project for webhook\n\nadd a line to README.md\n\nthis is a new line\n\nthis is another new line\n\nthis is another new new line\n",
+              "after": "# webhook-test\n\n这是一个演示项目，用于演示 webhook 的功能。\n",
+              "additions": 1,
+              "deletions": 8
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c900087ed0023jax7YEWM4a7AJ",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900087ed001ZwHAxOtkmaIgNC",
+          "type": "text",
+          "text": "修改readme文件，介绍当前项目是一个演示项目"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c90008800001EBhKfvCka47Ohm",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942479872,
+          "completed": 1771942486290
+        },
+        "parentID": "msg_c900087ed001ZwHAxOtkmaIgNC",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 47,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10715
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c9000986f001WK7u15vA7gzLPC",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90008800001EBhKfvCka47Ohm",
+          "type": "step-start",
+          "snapshot": "57681cbb0ba2d95d69750a3e470e691e4952f56d"
+        },
+        {
+          "id": "prt_c9000986f002bzzYwZ2Agz3jAX",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90008800001EBhKfvCka47Ohm",
+          "type": "reasoning",
+          "text": "用户想让我修改README文件，将其介绍为演示项目。我需要先查看当前的README文件内容。",
+          "metadata": {
+            "anthropic": {
+              "signature": "22514e26b01834e05922843148f5b9a13bc512fb9c5ded03824ac9d7d748aa52"
+            }
+          },
+          "time": {
+            "start": 1771942484079,
+            "end": 1771942484785
+          }
+        },
+        {
+          "id": "prt_c90009b310019O0HkTO6li8evb",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90008800001EBhKfvCka47Ohm",
+          "type": "tool",
+          "callID": "call_function_pl2roe4ornuf_1",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "README*"
+            },
+            "output": "/Users/sunminghui/Downloads/webhook-test/README.md",
+            "title": "",
+            "metadata": {
+              "count": 1,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771942485054,
+              "end": 1771942485067
+            }
+          }
+        },
+        {
+          "id": "prt_c9000a0bc001Ln5xN1iqBkZGZ4",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90008800001EBhKfvCka47Ohm",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "57681cbb0ba2d95d69750a3e470e691e4952f56d",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 47,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10715
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c9000a115001p4szH7E7cguSxT",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942486293,
+          "completed": 1771942492616
+        },
+        "parentID": "msg_c900087ed001ZwHAxOtkmaIgNC",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 112,
+          "output": 49,
+          "reasoning": 0,
+          "cache": {
+            "read": 11209,
+            "write": 68
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c9000b34f001hR4aPlev9DRmRi",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000a115001p4szH7E7cguSxT",
+          "type": "step-start",
+          "snapshot": "57681cbb0ba2d95d69750a3e470e691e4952f56d"
+        },
+        {
+          "id": "prt_c9000b34f0029X86yc1e52f6iM",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000a115001p4szH7E7cguSxT",
+          "type": "reasoning",
+          "text": "找到了README.md文件，让我读取它的内容。",
+          "metadata": {
+            "anthropic": {
+              "signature": "c517fab187565cabfa4f94c08c5b8e45d74de859b3861008736c5c1fa02a9fa4"
+            }
+          },
+          "time": {
+            "start": 1771942490959,
+            "end": 1771942491543
+          }
+        },
+        {
+          "id": "prt_c9000b5980010uDm5J8svtva10",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000a115001p4szH7E7cguSxT",
+          "type": "tool",
+          "callID": "call_function_jueldjnvj0ik_1",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/README.md"
+            },
+            "output": "<file>\n00001| # webhook-test\n00002| This is a test project for webhook\n00003| \n00004| add a line to README.md\n00005| \n00006| this is a new line\n00007| \n00008| this is another new line\n00009| \n00010| this is another new new line\n00011| \n\n(End of file - total 11 lines)\n</file>",
+            "title": "README.md",
+            "metadata": {
+              "preview": "# webhook-test\nThis is a test project for webhook\n\nadd a line to README.md\n\nthis is a new line\n\nthis is another new line\n\nthis is another new new line\n",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771942491840,
+              "end": 1771942491842
+            }
+          }
+        },
+        {
+          "id": "prt_c9000b97e0010mAtgXZX76735y",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000a115001p4szH7E7cguSxT",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "57681cbb0ba2d95d69750a3e470e691e4952f56d",
+          "cost": 0,
+          "tokens": {
+            "input": 112,
+            "output": 49,
+            "reasoning": 0,
+            "cache": {
+              "read": 11209,
+              "write": 68
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c9000b9cb001T8xQNRVf8CLzds",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942492619,
+          "completed": 1771942506542
+        },
+        "parentID": "msg_c900087ed001ZwHAxOtkmaIgNC",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 189,
+          "output": 88,
+          "reasoning": 0,
+          "cache": {
+            "read": 11225,
+            "write": 130
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c9000e9dc001A5h39GaEkc1SKt",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000b9cb001T8xQNRVf8CLzds",
+          "type": "step-start",
+          "snapshot": "57681cbb0ba2d95d69750a3e470e691e4952f56d"
+        },
+        {
+          "id": "prt_c9000e9dd001yTIZHzhL0ZdAaB",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000b9cb001T8xQNRVf8CLzds",
+          "type": "reasoning",
+          "text": "现在我需要修改README文件，介绍这是一个演示项目。我会重写它使其更简洁，并明确说明这是一个演示项目。",
+          "metadata": {
+            "anthropic": {
+              "signature": "28bf6ce7dd39bfeab3daa79856ca359d7d8eb5278f8c16cf5ce268cf8bc4e30a"
+            }
+          },
+          "time": {
+            "start": 1771942504925,
+            "end": 1771942505559
+          }
+        },
+        {
+          "id": "prt_c9000ed2d001QmxZnNXTKEp7Ph",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000b9cb001T8xQNRVf8CLzds",
+          "type": "tool",
+          "callID": "call_function_ycylfg2pswo1_1",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "content": "# webhook-test\n\n这是一个演示项目，用于演示 webhook 的功能。\n",
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/README.md"
+            },
+            "output": "Wrote file successfully.",
+            "title": "README.md",
+            "metadata": {
+              "diagnostics": {
+                "/Users/sunminghui/Downloads/webhook-test/yanghui.py": []
+              },
+              "filepath": "/Users/sunminghui/Downloads/webhook-test/README.md",
+              "exists": true,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771942506176,
+              "end": 1771942506200
+            }
+          }
+        },
+        {
+          "id": "prt_c9000efd1001YkXco3qBBhVEbp",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000b9cb001T8xQNRVf8CLzds",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a",
+          "cost": 0,
+          "tokens": {
+            "input": 189,
+            "output": 88,
+            "reasoning": 0,
+            "cache": {
+              "read": 11225,
+              "write": 130
+            }
+          }
+        },
+        {
+          "id": "prt_c9000f02c001DvxdTsYoafamgo",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000b9cb001T8xQNRVf8CLzds",
+          "type": "patch",
+          "hash": "57681cbb0ba2d95d69750a3e470e691e4952f56d",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c9000f032001YeOu1etjomAeKd",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942506546,
+          "completed": 1771942509442
+        },
+        "parentID": "msg_c900087ed001ZwHAxOtkmaIgNC",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 103,
+          "output": 43,
+          "reasoning": 0,
+          "cache": {
+            "read": 11301,
+            "write": 248
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_c9000f7d3001QiZf9AVWUgKGQt",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000f032001YeOu1etjomAeKd",
+          "type": "step-start",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a"
+        },
+        {
+          "id": "prt_c9000f7d3002OY90wfPFTZXiGn",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000f032001YeOu1etjomAeKd",
+          "type": "reasoning",
+          "text": "已经完成了修改，将README文件改成了简洁的演示项目介绍。",
+          "metadata": {
+            "anthropic": {
+              "signature": "39ba412a173df11c6c14b211f4cb30f60d064bcd2cb27fc06f307b28c00485f1"
+            }
+          },
+          "time": {
+            "start": 1771942508499,
+            "end": 1771942509051
+          }
+        },
+        {
+          "id": "prt_c9000f9fc001xULYeJgGB28zuh",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000f032001YeOu1etjomAeKd",
+          "type": "text",
+          "text": "已修改 README.md，现在内容为：\n\n webhook-test\n\n这是一个演示项目，用于演示```markdown\n# webhook 的功能。\n```",
+          "time": {
+            "start": 1771942509304,
+            "end": 1771942509304
+          }
+        },
+        {
+          "id": "prt_c9000fb2b001o0cBQ93XgfYD82",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c9000f032001YeOu1etjomAeKd",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a",
+          "cost": 0,
+          "tokens": {
+            "input": 103,
+            "output": 43,
+            "reasoning": 0,
+            "cache": {
+              "read": 11301,
+              "write": 248
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c900142d8001pdFzWT76YGlbA1",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "user",
+        "time": {
+          "created": 1771942527725
+        },
+        "summary": {
+          "title": "删除前不必要内容的整理",
+          "diffs": []
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c900142d8002iABNDOVNCYr7si",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900142d8001pdFzWT76YGlbA1",
+          "type": "text",
+          "text": "删除之前没用的内容"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c900142f6001lq2u6R9QxGERzv",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942527734,
+          "completed": 1771942530629
+        },
+        "parentID": "msg_c900142d8001pdFzWT76YGlbA1",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 58,
+          "reasoning": 0,
+          "cache": {
+            "read": 11456,
+            "write": 81
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c90014b66001QVPCl0KshAs1Mh",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900142f6001lq2u6R9QxGERzv",
+          "type": "step-start",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a"
+        },
+        {
+          "id": "prt_c90014b67001RWkY2nUGsr6jC9",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900142f6001lq2u6R9QxGERzv",
+          "type": "reasoning",
+          "text": "用户想要删除README中之前没用的内容。让我重新读取文件看看现在的内容。",
+          "metadata": {
+            "anthropic": {
+              "signature": "9149ddc05ef689a4d4cfcb98c3ef30bd75c6be3af5390fc893ce57d8ee93fd0a"
+            }
+          },
+          "time": {
+            "start": 1771942529895,
+            "end": 1771942530192
+          }
+        },
+        {
+          "id": "prt_c90014c91001gp0WygH19041Ho",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900142f6001lq2u6R9QxGERzv",
+          "type": "tool",
+          "callID": "call_function_awkv5j7xju2h_1",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/README.md"
+            },
+            "output": "<file>\n00001| # webhook-test\n00002| \n00003| 这是一个演示项目，用于演示 webhook 的功能。\n00004| \n\n(End of file - total 4 lines)\n</file>",
+            "title": "README.md",
+            "metadata": {
+              "preview": "# webhook-test\n\n这是一个演示项目，用于演示 webhook 的功能。\n",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771942530500,
+              "end": 1771942530504
+            }
+          }
+        },
+        {
+          "id": "prt_c90014df1001YyMRKZ0HVehw6I",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c900142f6001lq2u6R9QxGERzv",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 58,
+            "reasoning": 0,
+            "cache": {
+              "read": 11456,
+              "write": 81
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c90014e4a00198njdgM3My3Df3",
+        "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+        "role": "assistant",
+        "time": {
+          "created": 1771942530634,
+          "completed": 1771942546498
+        },
+        "parentID": "msg_c900142d8001pdFzWT76YGlbA1",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 141,
+          "output": 141,
+          "reasoning": 0,
+          "cache": {
+            "read": 11564,
+            "write": 36
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_c90015715001J1PEoTFVk3ebOH",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90014e4a00198njdgM3My3Df3",
+          "type": "step-start",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a"
+        },
+        {
+          "id": "prt_c90015716001snSJuQKjtxm2yF",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90014e4a00198njdgM3My3Df3",
+          "type": "reasoning",
+          "text": "用户说删除之前没用的内容。现在文件内容看起来已经是我刚才写的简洁版本了，没有之前那些 \"add a line to README.md\"、\"this is a new line\" 等无用内容了。\n\n可能用户想要更简洁的版本？或者用户以为还有旧内容？让我确认一下当前内容是否可以了。\n\n实际上文件现在已经很简洁了，没有之前那些无用的测试行。我应该告诉用户当前的状态。",
+          "metadata": {
+            "anthropic": {
+              "signature": "ff5a8d8f718a6a2ece18c1f149dfde6f1413bd9ab51acad1f643126a8a7755a1"
+            }
+          },
+          "time": {
+            "start": 1771942532886,
+            "end": 1771942545164
+          }
+        },
+        {
+          "id": "prt_c9001870c001XqFJs5UOOo3yQP",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90014e4a00198njdgM3My3Df3",
+          "type": "text",
+          "text": "文件已经是最新的内容了，之前那些测试行（如 \"add a line\"、\"this is a new line\" 等）已经被删除了。\n\n当前 README.md 内容：\n```markdown\n# webhook-test\n\n这是一个演示项目，用于演示 webhook 的功能。\n```\n\n还需要修改吗？",
+          "time": {
+            "start": 1771942545859,
+            "end": 1771942545859
+          }
+        },
+        {
+          "id": "prt_c90018be1001V1MWNVBljyrXIr",
+          "sessionID": "ses_36fff781effeQzIdUBtzUiXS4q",
+          "messageID": "msg_c90014e4a00198njdgM3My3Df3",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "906cff2ef361321eea072c7f3a7a4244f37d805a",
+          "cost": 0,
+          "tokens": {
+            "input": 141,
+            "output": 141,
+            "reasoning": 0,
+            "cache": {
+              "read": 11564,
+              "write": 36
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
