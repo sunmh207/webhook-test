@@ -1,0 +1,1319 @@
+{
+  "info": {
+    "id": "ses_3703a609cffewad4jyeETkEOeS",
+    "slug": "jolly-garden",
+    "version": "1.1.39",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/webhook-test",
+    "title": "简单 Python 文件功能测试",
+    "time": {
+      "created": 1771938619235,
+      "updated": 1771939768299
+    },
+    "summary": {
+      "additions": 23,
+      "deletions": 0,
+      "files": 1
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "id": "REDACTED",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "user",
+        "time": {
+          "created": 1771938619258
+        },
+        "summary": {
+          "title": "Python 简单文件测试功能\n\n",
+          "diffs": [
+            {
+              "file": "test_python.py",
+              "before": "",
+              "after": "def greet(name):\n    return f\"Hello, {name}!\"\n\ndef add(a, b):\n    return a + b\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\nif __name__ == \"__main__\":\n    print(greet(\"World\"))\n    print(f\"2 + 3 = {add(2, 3)}\")\n    print(f\"Fibonacci(10) = {fibonacci(10)}\")\n",
+              "additions": 15,
+              "deletions": 0
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c8fc59f6b002Fy6jq7ZjGEewZ2",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "text",
+          "text": "随便写一个简单的python文件，测试一下python功能"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fc59f810011LPpKWFCeXK8R2",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771938619265,
+          "completed": 1771938631491
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 177,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10715
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc59f810011LPpKWFCeXK8R2",
+          "type": "step-start",
+          "snapshot": "0ff6e9f51aa3666b503acf09b989392689c7d980"
+        },
+        {
+          "id": "prt_c8fc5ae42001oekd8iIqqfy01J",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc59f810011LPpKWFCeXK8R2",
+          "type": "reasoning",
+          "text": "用户想让我创建一个简单的Python文件来测试Python功能。我会创建一个简单的测试文件。",
+          "metadata": {
+            "anthropic": {
+              "signature": "5d7f9e38f04673c9687909daebecf9a1d8937b83c36ff581430e38db8e74647b"
+            }
+          },
+          "time": {
+            "start": 1771938623042,
+            "end": 1771938623251
+          }
+        },
+        {
+          "id": "prt_c8fc5af14001Vy2j9e2ARL1m2K",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc59f810011LPpKWFCeXK8R2",
+          "type": "tool",
+          "callID": "call_function_p2nsk8w5ltk3_1",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "content": "def greet(name):\n    return f\"Hello, {name}!\"\n\ndef add(a, b):\n    return a + b\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\nif __name__ == \"__main__\":\n    print(greet(\"World\"))\n    print(f\"2 + 3 = {add(2, 3)}\")\n    print(f\"Fibonacci(10) = {fibonacci(10)}\")\n",
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/test_python.py"
+            },
+            "output": "Wrote file successfully.",
+            "title": "test_python.py",
+            "metadata": {
+              "diagnostics": {
+                "/Users/sunminghui/Downloads/webhook-test/test_python.py": []
+              },
+              "filepath": "/Users/sunminghui/Downloads/webhook-test/test_python.py",
+              "exists": false,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771938624860,
+              "end": 1771938631407
+            }
+          }
+        },
+        {
+          "id": "prt_c8fc5cef2001ttLiXuRARmZ2sk",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc59f810011LPpKWFCeXK8R2",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 177,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10715
+            }
+          }
+        },
+        {
+          "id": "prt_c8fc5cf41001glf9Q3oxBROLLf",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc59f810011LPpKWFCeXK8R2",
+          "type": "patch",
+          "hash": "0ff6e9f51aa3666b503acf09b989392689c7d980",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/test_python.py"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fc5cf45001vH2JwaoGAHgmhb",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771938631493,
+          "completed": 1771938634719
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 103,
+          "output": 54,
+          "reasoning": 0,
+          "cache": {
+            "read": 11209,
+            "write": 198
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fc5d7b1001Kvhpc26QcuD4so",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5cf45001vH2JwaoGAHgmhb",
+          "type": "step-start",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267"
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5cf45001vH2JwaoGAHgmhb",
+          "type": "reasoning",
+          "text": "文件创建成功了，现在让我运行它来测试Python功能。",
+          "metadata": {
+            "anthropic": {
+              "signature": "aa2422543e45e11f013f73b656e15681cd247c29f718f6e3ac02712c8f042477"
+            }
+          },
+          "time": {
+            "start": 1771938633650,
+            "end": 1771938634461
+          }
+        },
+        {
+          "id": "prt_c8fc5dade001tGLS3Q9Z5aQxQl",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5cf45001vH2JwaoGAHgmhb",
+          "type": "tool",
+          "callID": "call_function_k5zmm9j2d3lc_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "python test_python.py",
+              "description": "Run test Python file"
+            },
+            "output": "/opt/homebrew/bin/bash: line 1: python: command not found\n",
+            "title": "Run test Python file",
+            "metadata": {
+              "output": "/opt/homebrew/bin/bash: line 1: python: command not found\n",
+              "exit": 127,
+              "description": "Run test Python file",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771938634624,
+              "end": 1771938634640
+            }
+          }
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5cf45001vH2JwaoGAHgmhb",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267",
+          "cost": 0,
+          "tokens": {
+            "input": 103,
+            "output": 54,
+            "reasoning": 0,
+            "cache": {
+              "read": 11209,
+              "write": 198
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fc5dbe2001Fo3j6cEblLDpfE",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771938634722,
+          "completed": 1771938637523
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 114,
+          "output": 56,
+          "reasoning": 0,
+          "cache": {
+            "read": 11225,
+            "write": 256
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5dbe2001Fo3j6cEblLDpfE",
+          "type": "step-start",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267"
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5dbe2001Fo3j6cEblLDpfE",
+          "type": "reasoning",
+          "text": "Python命令没找到，可能需要用python3。",
+          "metadata": {
+            "anthropic": {
+              "signature": "15e35eac6b928eb923d0b3e85ed4dc2a1e40ece475b5aac1b10e478ab35032e2"
+            }
+          },
+          "time": {
+            "start": 1771938636457,
+            "end": 1771938637221
+          }
+        },
+        {
+          "id": "prt_c8fc5e5a5001vpUU71CjhyP76a",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5dbe2001Fo3j6cEblLDpfE",
+          "type": "tool",
+          "callID": "call_function_mxy0jkv9ule2_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "python3 test_python.py",
+              "description": "Run test Python file with python3"
+            },
+            "output": "Hello, World!\n2 + 3 = 5\nFibonacci(10) = 55\n",
+            "title": "Run test Python file with python3",
+            "metadata": {
+              "output": "Hello, World!\n2 + 3 = 5\nFibonacci(10) = 55\n",
+              "exit": 0,
+              "description": "Run test Python file with python3",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771938637398,
+              "end": 1771938637435
+            }
+          }
+        },
+        {
+          "id": "prt_c8fc5e68b001BMuXxeAX9dKAXA",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5dbe2001Fo3j6cEblLDpfE",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267",
+          "cost": 0,
+          "tokens": {
+            "input": 114,
+            "output": 56,
+            "reasoning": 0,
+            "cache": {
+              "read": 11225,
+              "write": 256
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fc5e6d8001jB1qE8IL8nmW15",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771938637528,
+          "completed": 1771938639953
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 119,
+          "output": 50,
+          "reasoning": 0,
+          "cache": {
+            "read": 11422,
+            "write": 146
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5e6d8001jB1qE8IL8nmW15",
+          "type": "step-start",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267"
+        },
+        {
+          "id": "prt_c8fc5ed25001sJg2u6OTl70RGs",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5e6d8001jB1qE8IL8nmW15",
+          "type": "reasoning",
+          "text": "Python功能测试成功了。",
+          "metadata": {
+            "anthropic": {
+              "signature": "c16c2bb2da63d1a209d74e2d569f8c19e3df253c05f6120b931af3cc092420fa"
+            }
+          },
+          "time": {
+            "start": 1771938639141,
+            "end": 1771938639594
+          }
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5e6d8001jB1qE8IL8nmW15",
+          "type": "text",
+          "text": "已创建 `test_python.py` 并运行成功，输出：\n- `Hello, World!`\n- `2 + 3 = 5`\n- `Fibonacci(10) = 55`",
+          "time": {
+            "start": 1771938639811,
+            "end": 1771938639811
+          }
+        },
+        {
+          "id": "prt_c8fc5eff6001G45EsbJVjwXR4x",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fc5e6d8001jB1qE8IL8nmW15",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267",
+          "cost": 0,
+          "tokens": {
+            "input": 119,
+            "output": 50,
+            "reasoning": 0,
+            "cache": {
+              "read": 11422,
+              "write": 146
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fcbbbb9001RV7YKZZuMN57BR",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "user",
+        "time": {
+          "created": 1771939019733
+        },
+        "summary": {
+          "title": "Python command-line Pascal triangle generator",
+          "diffs": [
+            {
+              "file": "yanghui.py",
+              "before": "",
+              "after": "def yanghui(n):\n    triangle = []\n    for i in range(n):\n        row = [1] * (i + 1)\n        for j in range(1, i):\n            row[j] = triangle[i-1][j-1] + triangle[i-1][j]\n        triangle.append(row)\n    return triangle\n\ndef print_yanghui(n):\n    tri = yanghui(n)\n    width = len(' '.join(map(str, tri[-1])))\n    for row in tri:\n        print(' '.join(map(str, row)).center(width))\n\nif __name__ == \"__main__\":\n    n = int(input(\"输入行数: \"))\n    print_yanghui(n)\n",
+              "additions": 18,
+              "deletions": 0
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c8fcbbbb9002Vhx89P70BW549R",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbb9001RV7YKZZuMN57BR",
+          "type": "text",
+          "text": "再写一个python文件，可以在命令行画杨辉三角，尽可能简单"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939019755,
+          "completed": 1771939030661
+        },
+        "parentID": "msg_c8fcbbbb9001RV7YKZZuMN57BR",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 214,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 11101
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fcbd634001pMaNYR0rZAU1a2",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+          "type": "step-start",
+          "snapshot": "849e3cd92942efc14942839f410669021b9f3267"
+        },
+        {
+          "id": "prt_c8fcbd635001n0mZ6MybCKH198",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+          "type": "reasoning",
+          "text": "用户想要一个简单的Python程序来在命令行画杨辉三角。我需要写得简洁。",
+          "metadata": {
+            "anthropic": {
+              "signature": "b3530190a26821539cfeca72da8e0377c1db3a0af29be5fed4ff8c2f63c2901a"
+            }
+          },
+          "time": {
+            "start": 1771939026485,
+            "end": 1771939026879
+          }
+        },
+        {
+          "id": "prt_c8fcbd9d5001PLdt22uoafEFAp",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+          "type": "tool",
+          "callID": "call_function_mrbdhlhdry9p_1",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "content": "def yanghui(n):\n    triangle = []\n    for i in range(n):\n        row = [1] * (i + 1)\n        for j in range(1, i):\n            row[j] = triangle[i-1][j-1] + triangle[i-1][j]\n        triangle.append(row)\n    return triangle\n\ndef print_yanghui(n):\n    tri = yanghui(n)\n    width = len(' '.join(map(str, tri[-1])))\n    for row in tri:\n        print(' '.join(map(str, row)).center(width))\n\nif __name__ == \"__main__\":\n    n = int(input(\"输入行数: \"))\n    print_yanghui(n)\n",
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/yanghui.py"
+            },
+            "output": "Wrote file successfully.",
+            "title": "yanghui.py",
+            "metadata": {
+              "diagnostics": {
+                "/Users/sunminghui/Downloads/webhook-test/test_python.py": [],
+                "/Users/sunminghui/Downloads/webhook-test/yanghui.py": []
+              },
+              "filepath": "/Users/sunminghui/Downloads/webhook-test/yanghui.py",
+              "exists": false,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771939030117,
+              "end": 1771939030570
+            }
+          }
+        },
+        {
+          "id": "prt_c8fcbe62b001oBPDdWx0HOiwbH",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "2ccdcef0e831db000639e56a0e6e7666485d626b",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 214,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 11101
+            }
+          }
+        },
+        {
+          "id": "prt_c8fcbe683001CzikZcN0FkKVt7",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbbbeb001ZoyR9q0IWiRtw0",
+          "type": "patch",
+          "hash": "849e3cd92942efc14942839f410669021b9f3267",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/yanghui.py"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fcbe68b001a0wT20iszrGUzK",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939030667,
+          "completed": 1771939037401
+        },
+        "parentID": "msg_c8fcbbbb9001RV7YKZZuMN57BR",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 103,
+          "output": 56,
+          "reasoning": 0,
+          "cache": {
+            "read": 11599,
+            "write": 231
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fcbfa64001xV8sDqYakmDrCy",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbe68b001a0wT20iszrGUzK",
+          "type": "step-start",
+          "snapshot": "2ccdcef0e831db000639e56a0e6e7666485d626b"
+        },
+        {
+          "id": "prt_c8fcbfa64002wLRBoPkQ646anG",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbe68b001a0wT20iszrGUzK",
+          "type": "reasoning",
+          "text": "让我运行测试一下",
+          "metadata": {
+            "anthropic": {
+              "signature": "7a924f9a8747814daad1af8aa51dcb8f7dc61fd4decced3ab328dc38e811061f"
+            }
+          },
+          "time": {
+            "start": 1771939035748,
+            "end": 1771939036275
+          }
+        },
+        {
+          "id": "prt_c8fcbfc74001XqT0qmPPVJYhhS",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbe68b001a0wT20iszrGUzK",
+          "type": "tool",
+          "callID": "call_function_kw8nfgl2dun5_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "echo 8 | python3 yanghui.py",
+              "description": "Run yanghui.py with 8 rows"
+            },
+            "output": "输入行数:          1         \n        1 1        \n       1 2 1       \n      1 3 3 1      \n     1 4 6 4 1     \n   1 5 10 10 5 1   \n  1 6 15 20 15 6 1 \n1 7 21 35 35 21 7 1\n",
+            "title": "Run yanghui.py with 8 rows",
+            "metadata": {
+              "output": "输入行数:          1         \n        1 1        \n       1 2 1       \n      1 3 3 1      \n     1 4 6 4 1     \n   1 5 10 10 5 1   \n  1 6 15 20 15 6 1 \n1 7 21 35 35 21 7 1\n",
+              "exit": 0,
+              "description": "Run yanghui.py with 8 rows",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771939036697,
+              "end": 1771939036756
+            }
+          }
+        },
+        {
+          "id": "prt_c8fcc008a001VUQQgNa0Ek1475",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcbe68b001a0wT20iszrGUzK",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "2ccdcef0e831db000639e56a0e6e7666485d626b",
+          "cost": 0,
+          "tokens": {
+            "input": 103,
+            "output": 56,
+            "reasoning": 0,
+            "cache": {
+              "read": 11599,
+              "write": 231
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fcc00df001tDJ6ymWljitdnd",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939037407,
+          "completed": 1771939039691
+        },
+        "parentID": "msg_c8fcbbbb9001RV7YKZZuMN57BR",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 188,
+          "output": 43,
+          "reasoning": 0,
+          "cache": {
+            "read": 11611,
+            "write": 295
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fcc07f0001Z1e1HT5fegPdsH",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcc00df001tDJ6ymWljitdnd",
+          "type": "step-start",
+          "snapshot": "2ccdcef0e831db000639e56a0e6e7666485d626b"
+        },
+        {
+          "id": "prt_c8fcc07f1001kDtpbh0gZmv5EH",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcc00df001tDJ6ymWljitdnd",
+          "type": "reasoning",
+          "text": "成功了！杨辉三角已经正确打印出来了，并且居中对齐。",
+          "metadata": {
+            "anthropic": {
+              "signature": "5f655b2b39bcb64978ed1f2f9355cfaa61a6f62f4b89b07e8fe1619d6851c1b4"
+            }
+          },
+          "time": {
+            "start": 1771939039217,
+            "end": 1771939039605
+          }
+        },
+        {
+          "id": "prt_c8fcc0976001696DawjwQNVwcU",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcc00df001tDJ6ymWljitdnd",
+          "type": "text",
+          "text": "已创建 `yanghui.py`，运行结果如上。输入行数后会输出居中对齐的杨辉三角。",
+          "time": {
+            "start": 1771939039609,
+            "end": 1771939039609
+          }
+        },
+        {
+          "id": "prt_c8fcc097a001Nc3t3sGMf4idUt",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fcc00df001tDJ6ymWljitdnd",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "2ccdcef0e831db000639e56a0e6e7666485d626b",
+          "cost": 0,
+          "tokens": {
+            "input": 188,
+            "output": 43,
+            "reasoning": 0,
+            "cache": {
+              "read": 11611,
+              "write": 295
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "REDACTED",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "user",
+        "time": {
+          "created": 1771939744452
+        },
+        "summary": {
+          "title": "Yanghui.py 修改与关键代码注释增补",
+          "diffs": [
+            {
+              "file": "yanghui.py",
+              "before": "",
+              "after": "def yanghui(n):\n    \"\"\"生成杨辉三角\"\"\"\n    triangle = []\n    for i in range(n):\n        # 每行首尾元素为1\n        row = [1] * (i + 1)\n        # 计算中间元素：当前位置 = 上一行相邻两数之和\n        for j in range(1, i):\n            row[j] = triangle[i-1][j-1] + triangle[i-1][j]\n        triangle.append(row)\n    return triangle\n\ndef print_yanghui(n):\n    \"\"\"打印杨辉三角\"\"\"\n    tri = yanghui(n)\n    # 计算最后一行宽度用于居中\n    width = len(' '.join(map(str, tri[-1])))\n    for row in tri:\n        print(' '.join(map(str, row)).center(width))\n\nif __name__ == \"__main__\":\n    n = int(input(\"输入行数: \"))\n    print_yanghui(n)\n",
+              "additions": 23,
+              "deletions": 0
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd6caa70023Gx5Xdwt97v962",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "text",
+          "text": "修改yanghui.py，关键代码增加注释"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "REDACTED",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939744472,
+          "completed": 1771939749262
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 63,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 11508
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd6d8b7001kzA7U0kNeIT5WX",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "step-start",
+          "snapshot": "08529bd9f0125f4a58e82353be40820ed6757d4d"
+        },
+        {
+          "id": "prt_c8fd6d8b7002VdKjcLaQ9uydZ4",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "reasoning",
+          "text": "用户要求在 yanghui.py 的关键代码增加注释。我需要先读取这个文件，然后添加注释。",
+          "metadata": {
+            "anthropic": {
+              "signature": "6e38e5b7fb178597aae6eeaa3ffffdc014a2ea04b04a3ce407936b85d2df7b0e"
+            }
+          },
+          "time": {
+            "start": 1771939748023,
+            "end": 1771939748517
+          }
+        },
+        {
+          "id": "prt_c8fd6daa6001j4PlYZrVZJ4by7",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "tool",
+          "callID": "call_function_d6y47xci00f6_1",
+          "tool": "read",
+          "state": {
+            "status": "error",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/yanghui.py"
+            },
+            "error": "Error: File not found: /Users/sunminghui/Downloads/webhook-test/yanghui.py",
+            "time": {
+              "start": 1771939749169,
+              "end": 1771939749173
+            }
+          }
+        },
+        {
+          "id": "prt_c8fd6dd36001HGbt9SUFiy0hfF",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "08529bd9f0125f4a58e82353be40820ed6757d4d",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 63,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 11508
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fd6dd96001AtKbNdtMFckn4s",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939749270,
+          "completed": 1771939758054
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 121,
+          "output": 46,
+          "reasoning": 0,
+          "cache": {
+            "read": 12006,
+            "write": 80
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd6e5e5001uhjf1dLbAZkvzp",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6dd96001AtKbNdtMFckn4s",
+          "type": "step-start",
+          "snapshot": "08529bd9f0125f4a58e82353be40820ed6757d4d"
+        },
+        {
+          "id": "prt_c8fd6e5e6001eknfSJoL9P89f4",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6dd96001AtKbNdtMFckn4s",
+          "type": "reasoning",
+          "text": "文件不存在了，可能是被删除了。让我用glob查找一下这个文件。",
+          "metadata": {
+            "anthropic": {
+              "signature": "c6a62199412e0de524cfba5c6630b087868c67e7f1e0cf2bf8e523fe1580023a"
+            }
+          },
+          "time": {
+            "start": 1771939751398,
+            "end": 1771939757597
+          }
+        },
+        {
+          "id": "prt_c8fd6fe1e001T6b0e0UCB4AgZc",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6dd96001AtKbNdtMFckn4s",
+          "type": "tool",
+          "callID": "call_function_61dizfrweolq_1",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/yanghui.py"
+            },
+            "output": "No files found",
+            "title": "",
+            "metadata": {
+              "count": 0,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771939757951,
+              "end": 1771939757973
+            }
+          }
+        },
+        {
+          "id": "prt_c8fd6ff96001fWonRWM4yIJthE",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6dd96001AtKbNdtMFckn4s",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "08529bd9f0125f4a58e82353be40820ed6757d4d",
+          "cost": 0,
+          "tokens": {
+            "input": 121,
+            "output": 46,
+            "reasoning": 0,
+            "cache": {
+              "read": 12006,
+              "write": 80
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939758061,
+          "completed": 1771939764505
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 102,
+          "output": 260,
+          "reasoning": 0,
+          "cache": {
+            "read": 12018,
+            "write": 152
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd70969001u822Lmw4mqPSG7",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+          "type": "step-start",
+          "snapshot": "08529bd9f0125f4a58e82353be40820ed6757d4d"
+        },
+        {
+          "id": "prt_c8fd7096a001Pl33tewMoAq3cV",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+          "type": "reasoning",
+          "text": "文件确实不存在了。让我重新写一个带注释的版本。",
+          "metadata": {
+            "anthropic": {
+              "signature": "8a7ef6dfa3ad59584054bfc83663ae2ce3234ab367f1c6512b086de140f581cd"
+            }
+          },
+          "time": {
+            "start": 1771939760490,
+            "end": 1771939761244
+          }
+        },
+        {
+          "id": "prt_c8fd70c5d001kW4IQ4bj6KgMSI",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+          "type": "tool",
+          "callID": "call_function_n5iu4gbyi9fn_1",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "content": "def yanghui(n):\n    \"\"\"生成杨辉三角\"\"\"\n    triangle = []\n    for i in range(n):\n        # 每行首尾元素为1\n        row = [1] * (i + 1)\n        # 计算中间元素：当前位置 = 上一行相邻两数之和\n        for j in range(1, i):\n            row[j] = triangle[i-1][j-1] + triangle[i-1][j]\n        triangle.append(row)\n    return triangle\n\ndef print_yanghui(n):\n    \"\"\"打印杨辉三角\"\"\"\n    tri = yanghui(n)\n    # 计算最后一行宽度用于居中\n    width = len(' '.join(map(str, tri[-1])))\n    for row in tri:\n        print(' '.join(map(str, row)).center(width))\n\nif __name__ == \"__main__\":\n    n = int(input(\"输入行数: \"))\n    print_yanghui(n)\n",
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/yanghui.py"
+            },
+            "output": "Wrote file successfully.",
+            "title": "yanghui.py",
+            "metadata": {
+              "diagnostics": {
+                "/Users/sunminghui/Downloads/webhook-test/yanghui.py": []
+              },
+              "filepath": "/Users/sunminghui/Downloads/webhook-test/yanghui.py",
+              "exists": false,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771939763589,
+              "end": 1771939764421
+            }
+          }
+        },
+        {
+          "id": "prt_c8fd718c50013WifFhaB77Hqcm",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "bc1535b638c8aa8fe4b62aef6049c5941607d776",
+          "cost": 0,
+          "tokens": {
+            "input": 102,
+            "output": 260,
+            "reasoning": 0,
+            "cache": {
+              "read": 12018,
+              "write": 152
+            }
+          }
+        },
+        {
+          "id": "prt_c8fd71917001T3ZTjnNxaPBfD2",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd6ffed0016ywHt2sYuFR82U",
+          "type": "patch",
+          "hash": "08529bd9f0125f4a58e82353be40820ed6757d4d",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/yanghui.py"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c8fd71921001Zagzxtx0Gv4Vz4",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939764513,
+          "completed": 1771939768128
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 103,
+          "output": 65,
+          "reasoning": 0,
+          "cache": {
+            "read": 12119,
+            "write": 330
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd72082001lRvMma4hhs4F17",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd71921001Zagzxtx0Gv4Vz4",
+          "type": "step-start",
+          "snapshot": "bc1535b638c8aa8fe4b62aef6049c5941607d776"
+        },
+        {
+          "id": "prt_c8fd72083001aTd9CK2IqNAYcd",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd71921001Zagzxtx0Gv4Vz4",
+          "type": "reasoning",
+          "text": "文件创建好了，已添加关键注释。让我运行一下确认没问题。",
+          "metadata": {
+            "anthropic": {
+              "signature": "b1d2b5ea9f862bfcfaacd64ce5a9869981c4d0b0bf7a8ff214220942a364da18"
+            }
+          },
+          "time": {
+            "start": 1771939766403,
+            "end": 1771939767324
+          }
+        },
+        {
+          "id": "prt_c8fd7241d001GMLwQ1ZL4YGQEK",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd71921001Zagzxtx0Gv4Vz4",
+          "type": "tool",
+          "callID": "call_function_m93jb2cyaeti_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "echo 6 | python3 yanghui.py",
+              "description": "Run yanghui.py with 6 rows"
+            },
+            "output": "输入行数:       1      \n     1 1     \n    1 2 1    \n   1 3 3 1   \n  1 4 6 4 1  \n1 5 10 10 5 1\n",
+            "title": "Run yanghui.py with 6 rows",
+            "metadata": {
+              "output": "输入行数:       1      \n     1 1     \n    1 2 1    \n   1 3 3 1   \n  1 4 6 4 1  \n1 5 10 10 5 1\n",
+              "exit": 0,
+              "description": "Run yanghui.py with 6 rows",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771939767998,
+              "end": 1771939768053
+            }
+          }
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "msg_c8fd71921001Zagzxtx0Gv4Vz4",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "bc1535b638c8aa8fe4b62aef6049c5941607d776",
+          "cost": 0,
+          "tokens": {
+            "input": 103,
+            "output": 65,
+            "reasoning": 0,
+            "cache": {
+              "read": 12119,
+              "write": 330
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "REDACTED",
+        "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+        "role": "assistant",
+        "time": {
+          "created": 1771939768136,
+          "completed": 1771939770550
+        },
+        "parentID": "REDACTED",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 154,
+          "output": 24,
+          "reasoning": 0,
+          "cache": {
+            "read": 12184,
+            "write": 350
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_c8fd72e0200161HPhIDhXec4U6",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "step-start",
+          "snapshot": "bc1535b638c8aa8fe4b62aef6049c5941607d776"
+        },
+        {
+          "id": "prt_c8fd72e03001WsSMHlCTDMCaM8",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "reasoning",
+          "text": "已添加注释，运行正常。",
+          "metadata": {
+            "anthropic": {
+              "signature": "b7c46e65043b72a4a30d3011adca8a07442a895edaa18398941c1ee3feec60e1"
+            }
+          },
+          "time": {
+            "start": 1771939769859,
+            "end": 1771939770455
+          }
+        },
+        {
+          "id": "prt_c8fd73057001Ap1A9w0HGZJ9Ir",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "text",
+          "text": "已重新创建 `yanghui.py` 并添加注释，运行正常。",
+          "time": {
+            "start": 1771939770466,
+            "end": 1771939770466
+          }
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_3703a609cffewad4jyeETkEOeS",
+          "messageID": "REDACTED",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "bc1535b638c8aa8fe4b62aef6049c5941607d776",
+          "cost": 0,
+          "tokens": {
+            "input": 154,
+            "output": 24,
+            "reasoning": 0,
+            "cache": {
+              "read": 12184,
+              "write": 350
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
