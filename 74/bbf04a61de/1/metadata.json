@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.4.6",
+  "checkpoint_id": "74bbf04a61de",
+  "session_id": "ses_36ffd8cfcffewPbMeCKnWra6ZY",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-25T13:32:44.857477Z",
+  "branch": "test/20260225",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "README_zh-TW.md"
+  ],
+  "agent": "OpenCode",
+  "turn_id": "11cdfa9bdfec",
+  "initial_attribution": {
+    "calculated_at": "2026-02-25T13:32:44.856008Z",
+    "agent_lines": 35,
+    "human_added": 9,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 44,
+    "agent_percentage": 79.54545454545455
+  }
+}

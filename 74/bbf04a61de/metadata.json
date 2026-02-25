@@ -3,7 +3,7 @@
   "checkpoint_id": "74bbf04a61de",
   "strategy": "manual-commit",
   "branch": "test/20260225",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
     "README_zh-TW.md"
   ],
@@ -14,6 +14,13 @@
       "context": "/74/bbf04a61de/0/context.md",
       "content_hash": "/74/bbf04a61de/0/content_hash.txt",
       "prompt": "/74/bbf04a61de/0/prompt.txt"
+    },
+    {
+      "metadata": "/74/bbf04a61de/1/metadata.json",
+      "transcript": "/74/bbf04a61de/1/full.jsonl",
+      "context": "",
+      "content_hash": "/74/bbf04a61de/1/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
