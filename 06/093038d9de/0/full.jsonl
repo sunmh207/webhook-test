@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\n写一个测试用的python文件，越小越好，用于测试\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"已在项目里添加了一个很小的测试用 Python 文件 `test.py`，内容如下：\n\n- **`test_ok()`**：做一次简单断言（`1 + 1 == 2`）\n- **直接运行**：`python test.py` 会执行该测试并打印 `OK`\n\n运行方式：\n\n```bash\npython test.py\n```\n\n或用 pytest：\n\n```bash\npytest test.py -v\n```"}]}}
