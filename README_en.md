@@ -1,6 +1,6 @@
 # webhook-test
 
-[中文](./README.md) | English
+English | [简体中文](./README.md) | [繁體中文](./README_zh-TW.md)
 
 This is a demo project for demonstrating webhook functionality.
 
