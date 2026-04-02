@@ -19,3 +19,4 @@ def print_yanghui(n):
 if __name__ == "__main__":
     n = int(input("输入行数: "))
     print_yanghui(n)
+    print('end')
