@@ -1,0 +1,23 @@
+{
+  "cli_version": "0.4.8",
+  "checkpoint_id": "06093038d9de",
+  "session_id": "ea218a5b-cd87-41b9-a00a-e1abda514998",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-02T13:35:58.414725Z",
+  "branch": "test/20260225",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "test.py"
+  ],
+  "agent": "Cursor",
+  "turn_id": "e02967302dc9",
+  "initial_attribution": {
+    "calculated_at": "2026-03-02T13:35:58.400493Z",
+    "agent_lines": 8,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 8,
+    "agent_percentage": 100
+  }
+}

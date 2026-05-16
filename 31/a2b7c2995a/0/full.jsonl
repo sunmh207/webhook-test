@@ -1,0 +1,802 @@
+{
+  "info": {
+    "id": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+    "slug": "nimble-lagoon",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/webhook-test",
+    "title": "Subdirectory creation,测试文件提交与推送",
+    "version": "1.2.14",
+    "summary": {
+      "additions": 4,
+      "deletions": 0,
+      "files": 3
+    },
+    "time": {
+      "created": 1773022740666,
+      "updated": 1773022888144
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1773022740725
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": "test-subdir/test.txt",
+              "before": "",
+              "after": "test file\n",
+              "additions": 1,
+              "deletions": 0,
+              "status": "added"
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "minimax-m2.5-free"
+        },
+        "id": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "生成一个子目录，并在里面创建一个测试文件，并commit提交&push\n",
+          "id": "prt_cd06400c7002HyEC1864oCirAE",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06400c7001MoRJxWMXXCnd6y"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022740730,
+          "completed": 1773022753010
+        },
+        "parentID": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11460,
+          "input": 78,
+          "output": 80,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10792
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd06400fa001Kgzt1XAJ6z7r65",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "efc9bcfb85c5dccafae3cd026f9b6b76bc9010d2",
+          "id": "prt_cd0642626001K6Vb3ZnOGp8bdC",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06400fa001Kgzt1XAJ6z7r65"
+        },
+        {
+          "type": "reasoning",
+          "text": "用户想要：\n1. 创建一个子目录\n2. 在里面创建一个测试文件\n3. 提交并推送\n\n让我先看看当前目录的状态，了解一下情况。",
+          "metadata": {
+            "anthropic": {
+              "signature": "04f89c74018149ed15391f228ae1895dd86e65a11e3cbb2d5d62f43e1973e8ba"
+            }
+          },
+          "time": {
+            "start": 1773022750247,
+            "end": 1773022752293
+          },
+          "id": "prt_cd0642627001S0B3ADbtJI4bUZ",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06400fa001Kgzt1XAJ6z7r65"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_0tpazfntf2us_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "git status && git branch",
+              "description": "Check git status and current branch"
+            },
+            "output": "On branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n  develop\n  entire/checkpoints/v1\n  entire/f76e5e4-e3b0c4\n* main\n  test/20260225\n",
+            "title": "Check git status and current branch",
+            "metadata": {
+              "output": "On branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n  develop\n  entire/checkpoints/v1\n  entire/f76e5e4-e3b0c4\n* main\n  test/20260225\n",
+              "exit": 0,
+              "description": "Check git status and current branch",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773022752827,
+              "end": 1773022752890
+            }
+          },
+          "id": "prt_cd0642e26001SPg4Iot0KhpIUW",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06400fa001Kgzt1XAJ6z7r65"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "efc9bcfb85c5dccafae3cd026f9b6b76bc9010d2",
+          "cost": 0,
+          "tokens": {
+            "total": 11460,
+            "input": 78,
+            "output": 80,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10792
+            }
+          },
+          "id": "prt_cd064308a0011MgeEKR0dAEOqQ",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06400fa001Kgzt1XAJ6z7r65"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022753011,
+          "completed": 1773022756893
+        },
+        "parentID": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11615,
+          "input": 146,
+          "output": 82,
+          "reasoning": 0,
+          "cache": {
+            "read": 11283,
+            "write": 104
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd06430f200143tApeo92b7Q2o",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "efc9bcfb85c5dccafae3cd026f9b6b76bc9010d2",
+          "id": "prt_cd06438be0011vFazgS2ytA08a",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06430f200143tApeo92b7Q2o"
+        },
+        {
+          "type": "reasoning",
+          "text": "现在我知道用户在 main 分支上，工作目录是干净的。让我创建一个子目录和测试文件，然后提交并推送。",
+          "metadata": {
+            "anthropic": {
+              "signature": "d69db5f35da3a20c5367a5494efc9b13adad810a2d3a849425ef997dbba1586b"
+            }
+          },
+          "time": {
+            "start": 1773022755007,
+            "end": 1773022755769
+          },
+          "id": "prt_cd06438bf001YCL84dGfsbYLbz",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06430f200143tApeo92b7Q2o"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_i9ct831dwdsj_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "mkdir -p test-subdir && echo \"test file\" > test-subdir/test.txt",
+              "description": "Create subdirectory and test file"
+            },
+            "output": "",
+            "title": "Create subdirectory and test file",
+            "metadata": {
+              "output": "",
+              "exit": 0,
+              "description": "Create subdirectory and test file",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773022756683,
+              "end": 1773022756704
+            }
+          },
+          "id": "prt_cd0643ec2001C5PnGOiMELG12n",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06430f200143tApeo92b7Q2o"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "cost": 0,
+          "tokens": {
+            "total": 11615,
+            "input": 146,
+            "output": 82,
+            "reasoning": 0,
+            "cache": {
+              "read": 11283,
+              "write": 104
+            }
+          },
+          "id": "prt_cd0643fa0001HGUU61ZCDdASN2",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06430f200143tApeo92b7Q2o"
+        },
+        {
+          "type": "patch",
+          "hash": "efc9bcfb85c5dccafae3cd026f9b6b76bc9010d2",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/test-subdir/test.txt"
+          ],
+          "id": "prt_cd064401c001f7XqWVBknvKj23",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd06430f200143tApeo92b7Q2o"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022756894,
+          "completed": 1773022760272
+        },
+        "parentID": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11693,
+          "input": 83,
+          "output": 68,
+          "reasoning": 0,
+          "cache": {
+            "read": 11302,
+            "write": 240
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd064401e001yZIhLWXR6IJk48",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "id": "prt_cd0644bf0001D1mzegurN2JMGU",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd064401e001yZIhLWXR6IJk48"
+        },
+        {
+          "type": "reasoning",
+          "text": "现在添加文件并提交，然后推送。",
+          "metadata": {
+            "anthropic": {
+              "signature": "78de2a462a63a07333ff745ce8737dc29326d1ad00096a21fc1a8e0904f4c90d"
+            }
+          },
+          "time": {
+            "start": 1773022759920,
+            "end": 1773022759939
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd064401e001yZIhLWXR6IJk48"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_p4xgw5efgq1p_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "git add test-subdir/test.txt && git commit -m \"Add test subdirectory with test file\"",
+              "description": "Stage and commit the new file"
+            },
+            "output": "[main 3d95859] Add test subdirectory with test file\n 1 file changed, 1 insertion(+)\n create mode 100644 test-subdir/test.txt\n",
+            "title": "Stage and commit the new file",
+            "metadata": {
+              "output": "[main 3d95859] Add test subdirectory with test file\n 1 file changed, 1 insertion(+)\n create mode 100644 test-subdir/test.txt\n",
+              "exit": 0,
+              "description": "Stage and commit the new file",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773022759952,
+              "end": 1773022760179
+            }
+          },
+          "id": "prt_cd0644c04001QW1BAwNnJNDvJW",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd064401e001yZIhLWXR6IJk48"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "cost": 0,
+          "tokens": {
+            "total": 11693,
+            "input": 83,
+            "output": 68,
+            "reasoning": 0,
+            "cache": {
+              "read": 11302,
+              "write": 240
+            }
+          },
+          "id": "prt_cd0644cf3001t266A2CBWbW6Ap",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd064401e001yZIhLWXR6IJk48"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022760272,
+          "completed": 1773022769923
+        },
+        "parentID": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11791,
+          "input": 124,
+          "output": 47,
+          "reasoning": 0,
+          "cache": {
+            "read": 11455,
+            "write": 165
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd0644d500019pslmmfWvmIYJo",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "id": "prt_cd0645295001NaNizK1mnzF772",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0644d500019pslmmfWvmIYJo"
+        },
+        {
+          "type": "reasoning",
+          "text": "提交成功了。现在推送到远程。",
+          "metadata": {
+            "anthropic": {
+              "signature": "45d74afc0a58edf3446730f93f7b1cf2b036e10ce32c3da9682c31736382613b"
+            }
+          },
+          "time": {
+            "start": 1773022761622,
+            "end": 1773022762195
+          },
+          "id": "prt_cd0645296001AVtxAYdcqiBC1D",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0644d500019pslmmfWvmIYJo"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_9o6iflwf3vbv_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "git push",
+              "description": "Push to remote repository"
+            },
+            "output": "[entire] Pushing entire/checkpoints/v1 to origin...\nTo github.com:sunmh207/webhook-test.git\n   1ca964b..3d95859  main -> main\n",
+            "title": "Push to remote repository",
+            "metadata": {
+              "output": "[entire] Pushing entire/checkpoints/v1 to origin...\nTo github.com:sunmh207/webhook-test.git\n   1ca964b..3d95859  main -> main\n",
+              "exit": 0,
+              "description": "Push to remote repository",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773022762317,
+              "end": 1773022769807
+            }
+          },
+          "id": "prt_cd06454d4001Endopdv47FMreN",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0644d500019pslmmfWvmIYJo"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "cost": 0,
+          "tokens": {
+            "total": 11791,
+            "input": 124,
+            "output": 47,
+            "reasoning": 0,
+            "cache": {
+              "read": 11455,
+              "write": 165
+            }
+          },
+          "id": "prt_cd0647290001giO5IdWMydPYGz",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0644d500019pslmmfWvmIYJo"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022769924,
+          "completed": 1773022773349
+        },
+        "parentID": "msg_cd06400c7001MoRJxWMXXCnd6y",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11912,
+          "input": 128,
+          "output": 66,
+          "reasoning": 0,
+          "cache": {
+            "read": 11547,
+            "write": 171
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cd0647304001DdDb6dv4AZtLSa",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "id": "prt_cd0647b1b00157HcwZlgdTdEXF",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0647304001DdDb6dv4AZtLSa"
+        },
+        {
+          "type": "reasoning",
+          "text": "完成了。已经创建了子目录 test-subdir，创建了测试文件 test-subdir/test.txt，提交并推送到了远程仓库。",
+          "metadata": {
+            "anthropic": {
+              "signature": "e3ac84de95723e806bae91e21b9861cc6589de881a8d10f74f8e6c99faf97cf1"
+            }
+          },
+          "time": {
+            "start": 1773022771995,
+            "end": 1773022772485
+          },
+          "id": "prt_cd0647b1b002mWr37aJkD7E9Dk",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0647304001DdDb6dv4AZtLSa"
+        },
+        {
+          "type": "text",
+          "text": "已完成：\n- 创建了子目录 `test-subdir/`\n- 创建了测试文件 `test-subdir/test.txt`\n- 提交并推送到 `main` 分支",
+          "time": {
+            "start": 1773022773148,
+            "end": 1773022773148
+          },
+          "id": "prt_cd0647d05001ZZ9w6zlFdLK490",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0647304001DdDb6dv4AZtLSa"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "6c287074f2aac1dbc6394969c0e191e346fb8e5d",
+          "cost": 0,
+          "tokens": {
+            "total": 11912,
+            "input": 128,
+            "output": 66,
+            "reasoning": 0,
+            "cache": {
+              "read": 11547,
+              "write": 171
+            }
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd0647304001DdDb6dv4AZtLSa"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1773022883958
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": "test-subdir/temp.txt",
+              "before": "",
+              "after": "temporary file\n",
+              "additions": 1,
+              "deletions": 0,
+              "status": "added"
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "minimax-m2.5-free"
+        },
+        "id": "msg_cd066304d0010OIdgmvyMQswSa",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "在test-subdir下面再创建一个临时文件，不要提交",
+          "id": "prt_cd066304d002qCWR7NezP12i2V",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066304d0010OIdgmvyMQswSa"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022883965,
+          "completed": 1773022887978
+        },
+        "parentID": "msg_cd066304d0010OIdgmvyMQswSa",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11884,
+          "input": 78,
+          "output": 71,
+          "reasoning": 0,
+          "cache": {
+            "read": 11666,
+            "write": 69
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd066307d001qwzaGPvHrO8aTm",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "bb576818d2f0f9fa9bd7010b0f2f6ab1e0283c59",
+          "id": "prt_cd0663c04001j7m8dvL3R0yWbI",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066307d001qwzaGPvHrO8aTm"
+        },
+        {
+          "type": "reasoning",
+          "text": "用户想在test-subdir下创建一个临时文件但不提交。我只需要创建文件即可，不需要git add或commit。",
+          "metadata": {
+            "anthropic": {
+              "signature": "c5c9e1fe79805f1ec6bbbe36128792da42065345ed9399164f777614f04bafac"
+            }
+          },
+          "time": {
+            "start": 1773022886917,
+            "end": 1773022887586
+          },
+          "id": "prt_cd0663c05001v1Vt56OOKs0MeP",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066307d001qwzaGPvHrO8aTm"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_mywv2wgpkgr5_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "echo \"temporary file\" > test-subdir/temp.txt",
+              "description": "Create temporary file"
+            },
+            "output": "",
+            "title": "Create temporary file",
+            "metadata": {
+              "output": "",
+              "exit": 0,
+              "description": "Create temporary file",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773022887788,
+              "end": 1773022887801
+            }
+          },
+          "id": "prt_cd0663ea3001d8CwrqW6qpbipU",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066307d001qwzaGPvHrO8aTm"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "8cfbb40f84f12148d1587eafcd768ff9105747b4",
+          "cost": 0,
+          "tokens": {
+            "total": 11884,
+            "input": 78,
+            "output": 71,
+            "reasoning": 0,
+            "cache": {
+              "read": 11666,
+              "write": 69
+            }
+          },
+          "id": "prt_cd0663fc3001mpLQq5yGHXcImS",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066307d001qwzaGPvHrO8aTm"
+        },
+        {
+          "type": "patch",
+          "hash": "bb576818d2f0f9fa9bd7010b0f2f6ab1e0283c59",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/test-subdir/temp.txt"
+          ],
+          "id": "prt_cd0664029001MmM7GprYxy8LDC",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066307d001qwzaGPvHrO8aTm"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773022887980,
+          "completed": 1773022892266
+        },
+        "parentID": "msg_cd066304d0010OIdgmvyMQswSa",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11930,
+          "input": 83,
+          "output": 36,
+          "reasoning": 0,
+          "cache": {
+            "read": 11768,
+            "write": 43
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cd066402c001G50PSRyx6nmSWp",
+        "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "8cfbb40f84f12148d1587eafcd768ff9105747b4",
+          "id": "prt_cd0664c67001jbGgajqi8mx8mj",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066402c001G50PSRyx6nmSWp"
+        },
+        {
+          "type": "reasoning",
+          "text": "文件已创建，这只是一个未跟踪的临时文件，不会被提交。",
+          "metadata": {
+            "anthropic": {
+              "signature": "845c7b767e3e2a8a6d1941780e5d446a58befe8d8296d15f52243509983af631"
+            }
+          },
+          "time": {
+            "start": 1773022891111,
+            "end": 1773022891862
+          },
+          "id": "prt_cd0664c67002jsfY5eoIIaeORX",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066402c001G50PSRyx6nmSWp"
+        },
+        {
+          "type": "text",
+          "text": "已创建 `test-subdir/temp.txt`，这是未跟踪文件，不会被提交。",
+          "time": {
+            "start": 1773022892062,
+            "end": 1773022892062
+          },
+          "id": "prt_cd0664f56001q5CSPAGdPXsCTh",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066402c001G50PSRyx6nmSWp"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "8cfbb40f84f12148d1587eafcd768ff9105747b4",
+          "cost": 0,
+          "tokens": {
+            "total": 11930,
+            "input": 83,
+            "output": 36,
+            "reasoning": 0,
+            "cache": {
+              "read": 11768,
+              "write": 43
+            }
+          },
+          "id": "prt_cd0665077001H7QwnqdirdJ8FB",
+          "sessionID": "ses_32f9bff45ffe7yzx0kfZVuS46r",
+          "messageID": "msg_cd066402c001G50PSRyx6nmSWp"
+        }
+      ]
+    }
+  ]
+}

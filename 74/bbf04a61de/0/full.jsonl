@@ -1,0 +1,351 @@
+{
+  "info": {
+    "id": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+    "slug": "jolly-cactus",
+    "version": "1.1.39",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/webhook-test",
+    "title": "删除 test_python.py 文件",
+    "time": {
+      "created": 1771946132452,
+      "updated": 1771946173439
+    },
+    "summary": {
+      "additions": 0,
+      "deletions": 15,
+      "files": 1
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "id": "msg_c903843f2001JjciiAFNzhSHyf",
+        "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+        "role": "user",
+        "time": {
+          "created": 1771946132476
+        },
+        "summary": {
+          "title": "删除 test_python.py 文件</analysis>",
+          "diffs": [
+            {
+              "file": "test_python.py",
+              "before": "def greet(name):\n    return f\"Hello, {name}!\"\n\ndef add(a, b):\n    return a + b\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\nif __name__ == \"__main__\":\n    print(greet(\"World\"))\n    print(f\"2 + 3 = {add(2, 3)}\")\n    print(f\"Fibonacci(10) = {fibonacci(10)}\")\n",
+              "after": "",
+              "additions": 0,
+              "deletions": 15
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_c903843f2002UjM0CiGloKPcih",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c903843f2001JjciiAFNzhSHyf",
+          "type": "text",
+          "text": "删除test_python.py文件"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c903844010019QVXNRJ6VX4VdK",
+        "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+        "role": "assistant",
+        "time": {
+          "created": 1771946132481,
+          "completed": 1771946167685
+        },
+        "parentID": "msg_c903843f2001JjciiAFNzhSHyf",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 88,
+          "output": 48,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10709
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c9038c8a0001fYtBOV38kqG0lG",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c903844010019QVXNRJ6VX4VdK",
+          "type": "step-start",
+          "snapshot": "02602f4683c3fbd85eae054aef380448fea88fe0"
+        },
+        {
+          "id": "prt_c9038c8a1001hjdZpEMVOlT1ql",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c903844010019QVXNRJ6VX4VdK",
+          "type": "reasoning",
+          "text": "用户要求删除test_python.py文件。我需要先确认这个文件是否存在，然后删除它。",
+          "metadata": {
+            "anthropic": {
+              "signature": "f106d31eee41c9c2c1ad9896d03d8e6817f90c6691f4048adba443dc4ac837ca"
+            }
+          },
+          "time": {
+            "start": 1771946166433,
+            "end": 1771946167251
+          }
+        },
+        {
+          "id": "prt_c9038cbd5001lzQfZ62l8z4iC7",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c903844010019QVXNRJ6VX4VdK",
+          "type": "tool",
+          "callID": "call_function_3z7q61htvgqn_1",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/test_python.py"
+            },
+            "output": "/Users/sunminghui/Downloads/webhook-test/test_python.py",
+            "title": "",
+            "metadata": {
+              "count": 1,
+              "truncated": false
+            },
+            "time": {
+              "start": 1771946167547,
+              "end": 1771946167577
+            }
+          }
+        },
+        {
+          "id": "prt_c9038cd35001M70Wa17r9ykMnV",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c903844010019QVXNRJ6VX4VdK",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "02602f4683c3fbd85eae054aef380448fea88fe0",
+          "cost": 0,
+          "tokens": {
+            "input": 88,
+            "output": 48,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10709
+            }
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c9038cd87001p1eLhlrI76l0D6",
+        "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+        "role": "assistant",
+        "time": {
+          "created": 1771946167687,
+          "completed": 1771946173386
+        },
+        "parentID": "msg_c903843f2001JjciiAFNzhSHyf",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 113,
+          "output": 61,
+          "reasoning": 0,
+          "cache": {
+            "read": 11209,
+            "write": 63
+          }
+        },
+        "finish": "tool-calls"
+      },
+      "parts": [
+        {
+          "id": "prt_c9038e05e001LmaJiVV3Lf5PQl",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038cd87001p1eLhlrI76l0D6",
+          "type": "step-start",
+          "snapshot": "02602f4683c3fbd85eae054aef380448fea88fe0"
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038cd87001p1eLhlrI76l0D6",
+          "type": "reasoning",
+          "text": "文件存在，现在删除它。",
+          "metadata": {
+            "anthropic": {
+              "signature": "d759b13f8c794ce5c06ac89deaa72b048bbf3e29c4ed87d12d278f35ece7723e"
+            }
+          },
+          "time": {
+            "start": 1771946172511,
+            "end": 1771946173266
+          }
+        },
+        {
+          "id": "prt_c9038e353001ZgYM5F5hksb3R3",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038cd87001p1eLhlrI76l0D6",
+          "type": "tool",
+          "callID": "call_function_27nmq1fk3jbk_1",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "rm /Users/sunminghui/Downloads/webhook-test/test_python.py",
+              "description": "Delete test_python.py file"
+            },
+            "output": "",
+            "title": "Delete test_python.py file",
+            "metadata": {
+              "output": "",
+              "exit": 0,
+              "description": "Delete test_python.py file",
+              "truncated": false
+            },
+            "time": {
+              "start": 1771946173282,
+              "end": 1771946173306
+            }
+          }
+        },
+        {
+          "id": "REDACTED",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038cd87001p1eLhlrI76l0D6",
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "33bec6ac700afa1ad718994266a5a470ba5ada09",
+          "cost": 0,
+          "tokens": {
+            "input": 113,
+            "output": 61,
+            "reasoning": 0,
+            "cache": {
+              "read": 11209,
+              "write": 63
+            }
+          }
+        },
+        {
+          "id": "prt_c9038e3c7001awXDuryhHQ5Chq",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038cd87001p1eLhlrI76l0D6",
+          "type": "patch",
+          "hash": "02602f4683c3fbd85eae054aef380448fea88fe0",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/test_python.py"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_c9038e3cc001G9cJBPwod2d3ho",
+        "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+        "role": "assistant",
+        "time": {
+          "created": 1771946173388,
+          "completed": 1771946177233
+        },
+        "parentID": "msg_c903843f2001JjciiAFNzhSHyf",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 93,
+          "output": 24,
+          "reasoning": 0,
+          "cache": {
+            "read": 11219,
+            "write": 144
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_c9038ee4b001qJG3AgfO1ldNc0",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038e3cc001G9cJBPwod2d3ho",
+          "type": "step-start",
+          "snapshot": "33bec6ac700afa1ad718994266a5a470ba5ada09"
+        },
+        {
+          "id": "prt_c9038ee4c001a8FaZzE6D1zU6N",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038e3cc001G9cJBPwod2d3ho",
+          "type": "reasoning",
+          "text": "文件已删除。我应该简洁地告诉用户已完成。",
+          "metadata": {
+            "anthropic": {
+              "signature": "6ca6c5f8f2436d51e5932e330076b5c460075f939fae5f1703c5df45e56db315"
+            }
+          },
+          "time": {
+            "start": 1771946176076,
+            "end": 1771946176535
+          }
+        },
+        {
+          "id": "prt_c9038f019001rhSDAUnX1qaAKi",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038e3cc001G9cJBPwod2d3ho",
+          "type": "text",
+          "text": "已删除 `test_python.py` 文件。",
+          "time": {
+            "start": 1771946176539,
+            "end": 1771946176539
+          }
+        },
+        {
+          "id": "prt_c9038f272001JfoN3rspYGwM5q",
+          "sessionID": "ses_36fc7bc1bffeGEcoOMvl3EBigz",
+          "messageID": "msg_c9038e3cc001G9cJBPwod2d3ho",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "33bec6ac700afa1ad718994266a5a470ba5ada09",
+          "cost": 0,
+          "tokens": {
+            "input": 93,
+            "output": 24,
+            "reasoning": 0,
+            "cache": {
+              "read": 11219,
+              "write": 144
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

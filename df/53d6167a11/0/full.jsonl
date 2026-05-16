@@ -1,0 +1,465 @@
+{
+  "info": {
+    "id": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+    "slug": "eager-mountain",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/webhook-test",
+    "title": "往test20250309.txt 随机添加一行文字 -> Randomly append line to test20250309.txt",
+    "version": "1.2.14",
+    "summary": {
+      "additions": 1,
+      "deletions": 0,
+      "files": 1
+    },
+    "time": {
+      "created": 1773019207764,
+      "updated": 1773019219603
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1773019207798
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": "test20250309.txt",
+              "before": "this is a test \n",
+              "after": "this is a test \nrandom line added at 2026-03-09\n",
+              "additions": 1,
+              "deletions": 0,
+              "status": "modified"
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "minimax-m2.5-free"
+        },
+        "id": "msg_cd02e1862001uKS0PDHphUgJKb",
+        "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "往test20250309.txt中随机添加一行文字",
+          "id": "prt_cd02e1863001gltPaq7xyykz7c",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e1862001uKS0PDHphUgJKb"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773019207804,
+          "completed": 1773019212186
+        },
+        "parentID": "msg_cd02e1862001uKS0PDHphUgJKb",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11434,
+          "input": 78,
+          "output": 57,
+          "reasoning": 0,
+          "cache": {
+            "read": 510,
+            "write": 10789
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd02e187c0010uy8yZox5C1Sj6",
+        "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "id": "prt_cd02e2718001gCqrLU9mzyQOCX",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e187c0010uy8yZox5C1Sj6"
+        },
+        {
+          "type": "reasoning",
+          "text": "用户想要往 test20250309.txt 文件中随机添加一行文字。我需要先查看这个文件是否存在，以及它的当前内容是什么。",
+          "metadata": {
+            "anthropic": {
+              "signature": "5af001d085996a894f5cb8906342e36dcca4991e0112b4a717ab4d4c7f9a81e4"
+            }
+          },
+          "time": {
+            "start": 1773019211545,
+            "end": 1773019211616
+          },
+          "id": "prt_cd02e27190013FGazocJpIJUNP",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e187c0010uy8yZox5C1Sj6"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_o27yccnns3nb_1",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "test20250309.txt"
+            },
+            "output": "/Users/sunminghui/Downloads/webhook-test/test20250309.txt",
+            "title": "",
+            "metadata": {
+              "count": 1,
+              "truncated": false
+            },
+            "time": {
+              "start": 1773019211969,
+              "end": 1773019211983
+            }
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e187c0010uy8yZox5C1Sj6"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "cost": 0,
+          "tokens": {
+            "total": 11434,
+            "input": 78,
+            "output": 57,
+            "reasoning": 0,
+            "cache": {
+              "read": 510,
+              "write": 10789
+            }
+          },
+          "id": "prt_cd02e291d001grdLpd5WX8SQNj",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e187c0010uy8yZox5C1Sj6"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773019212187,
+          "completed": 1773019215690
+        },
+        "parentID": "msg_cd02e1862001uKS0PDHphUgJKb",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11516,
+          "input": 105,
+          "output": 50,
+          "reasoning": 0,
+          "cache": {
+            "read": 11283,
+            "write": 78
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd02e299b001Fg5GnYVlwLko9r",
+        "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "id": "REDACTED",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e299b001Fg5GnYVlwLko9r"
+        },
+        {
+          "type": "reasoning",
+          "text": "文件存在，让我读取它的内容。",
+          "metadata": {
+            "anthropic": {
+              "signature": "f524bc2a7323967db76ac84333caef41fde7066932fc66701e3576d430043564"
+            }
+          },
+          "time": {
+            "start": 1773019214435,
+            "end": 1773019215178
+          },
+          "id": "prt_cd02e3263002t1r6mJ04UVFETp",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e299b001Fg5GnYVlwLko9r"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_fry61nyzao0i_1",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/test20250309.txt"
+            },
+            "output": "<path>/Users/sunminghui/Downloads/webhook-test/test20250309.txt</path>\n<type>file</type>\n<content>1: this is a test \n\n(End of file - total 1 lines)\n</content>",
+            "title": "test20250309.txt",
+            "metadata": {
+              "preview": "this is a test ",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1773019215437,
+              "end": 1773019215441
+            }
+          },
+          "id": "REDACTED",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e299b001Fg5GnYVlwLko9r"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "cost": 0,
+          "tokens": {
+            "total": 11516,
+            "input": 105,
+            "output": 50,
+            "reasoning": 0,
+            "cache": {
+              "read": 11283,
+              "write": 78
+            }
+          },
+          "id": "prt_cd02e36ce001nw6JUCpWKZclRb",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e299b001Fg5GnYVlwLko9r"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773019215690,
+          "completed": 1773019219521
+        },
+        "parentID": "msg_cd02e1862001uKS0PDHphUgJKb",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11696,
+          "input": 139,
+          "output": 114,
+          "reasoning": 0,
+          "cache": {
+            "read": 11299,
+            "write": 144
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cd02e374a001t7OFzdSEbKb7yN",
+        "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "id": "prt_cd02e3dd8001gRNS0gfXNGntnS",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e374a001t7OFzdSEbKb7yN"
+        },
+        {
+          "type": "reasoning",
+          "text": "文件内容只有一行 \"this is a test\"。用户要求随机添加一行文字。我可以添加一些随机内容，比如当前时间戳或者一些随机文本。",
+          "metadata": {
+            "anthropic": {
+              "signature": "8935596a7b3e1aa38d00110ce4c44070e3cedcad36eeebd8570bd41b685a00f2"
+            }
+          },
+          "time": {
+            "start": 1773019217368,
+            "end": 1773019218535
+          },
+          "id": "prt_cd02e3dd80027uBXSdn1HSgFKE",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e374a001t7OFzdSEbKb7yN"
+        },
+        {
+          "type": "tool",
+          "callID": "call_function_qrq6nl7a1i3h_1",
+          "tool": "edit",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/webhook-test/test20250309.txt",
+              "newString": "this is a test \nrandom line added at 2026-03-09",
+              "oldString": "this is a test "
+            },
+            "output": "Edit applied successfully.",
+            "title": "test20250309.txt",
+            "metadata": {
+              "diagnostics": {},
+              "diff": "Index: /Users/sunminghui/Downloads/webhook-test/test20250309.txt\n===================================================================\n--- /Users/sunminghui/Downloads/webhook-test/test20250309.txt\n+++ /Users/sunminghui/Downloads/webhook-test/test20250309.txt\n@@ -1,1 +1,2 @@\n this is a test \n+random line added at 2026-03-09\n",
+              "filediff": {
+                "file": "/Users/sunminghui/Downloads/webhook-test/test20250309.txt",
+                "before": "this is a test \n",
+                "after": "this is a test \nrandom line added at 2026-03-09\n",
+                "additions": 1,
+                "deletions": 0
+              },
+              "truncated": false
+            },
+            "time": {
+              "start": 1773019219304,
+              "end": 1773019219334
+            }
+          },
+          "id": "prt_cd02e42680014q6lr7YW8QIssZ",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e374a001t7OFzdSEbKb7yN"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "c4f5fd0e5ed7904abb275f1bd0c54ec07822dffc",
+          "cost": 0,
+          "tokens": {
+            "total": 11696,
+            "input": 139,
+            "output": 114,
+            "reasoning": 0,
+            "cache": {
+              "read": 11299,
+              "write": 144
+            }
+          },
+          "id": "prt_cd02e45b4001wUwzVo1gObVR20",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e374a001t7OFzdSEbKb7yN"
+        },
+        {
+          "type": "patch",
+          "hash": "b3a4b4b2c69d3ffac356e23bfb4ff7537f98d791",
+          "files": [
+            "/Users/sunminghui/Downloads/webhook-test/test20250309.txt"
+          ],
+          "id": "prt_cd02e463e001cm902O3v2xvYT9",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e374a001t7OFzdSEbKb7yN"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773019219522,
+          "completed": 1773019221380
+        },
+        "parentID": "msg_cd02e1862001uKS0PDHphUgJKb",
+        "modelID": "minimax-m2.5-free",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/webhook-test",
+          "root": "/Users/sunminghui/Downloads/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 11737,
+          "input": 92,
+          "output": 22,
+          "reasoning": 0,
+          "cache": {
+            "read": 11388,
+            "write": 235
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cd02e4642001UTmk7TKwx7aUV8",
+        "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "c4f5fd0e5ed7904abb275f1bd0c54ec07822dffc",
+          "id": "prt_cd02e4b66001gKIwBFdwUs3g3v",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e4642001UTmk7TKwx7aUV8"
+        },
+        {
+          "type": "reasoning",
+          "text": "已成功添加了一行随机文字到文件中。",
+          "metadata": {
+            "anthropic": {
+              "signature": "8a6b71ad1c7b424b956e3bff159637088c118235873be6f7552c60dc120c97e6"
+            }
+          },
+          "time": {
+            "start": 1773019220838,
+            "end": 1773019221208
+          },
+          "id": "prt_cd02e4b66002snaHL2Gt6AvqOU",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e4642001UTmk7TKwx7aUV8"
+        },
+        {
+          "type": "text",
+          "text": "已添加一行随机文字到文件中。",
+          "time": {
+            "start": 1773019221210,
+            "end": 1773019221210
+          },
+          "id": "prt_cd02e4cd9001hZn5sK24hGDlPO",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e4642001UTmk7TKwx7aUV8"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "c4f5fd0e5ed7904abb275f1bd0c54ec07822dffc",
+          "cost": 0,
+          "tokens": {
+            "total": 11737,
+            "input": 92,
+            "output": 22,
+            "reasoning": 0,
+            "cache": {
+              "read": 11388,
+              "write": 235
+            }
+          },
+          "id": "prt_cd02e4d11001o1ulL7fywTFY2m",
+          "sessionID": "ses_32fd1e7abffeudd0fXDZTt6Hfl",
+          "messageID": "msg_cd02e4642001UTmk7TKwx7aUV8"
+        }
+      ]
+    }
+  ]
+}

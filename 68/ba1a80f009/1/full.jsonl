@@ -1,0 +1,4 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\nhi\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"你好，有什么需要帮忙的吗？可以是代码、项目或 Cursor 使用上的任何问题。"}]}}
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\n写一个测试用的python文件，越小越好\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"已经在项目里加了一个很小的测试文件 `test.py`，里面只有一个断言：\n\n```python\ndef test():\n    assert 1 + 1 == 2\n```\n\n用 pytest 跑：`pytest test.py -v`。"}]}}
