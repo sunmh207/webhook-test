@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "d4a207942ff0",
+  "session_id": "227b2de8-0bc2-4a15-8502-1657cec8d379",
+  "strategy": "manual-commit",
+  "created_at": "2026-05-31T01:44:58.012509Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".gitignore"
+  ],
+  "agent": "Claude Code",
+  "model": "mimo-v2.5-pro",
+  "turn_id": "b5bb96f029fa",
+  "token_usage": {
+    "input_tokens": 26820,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 36,
+    "api_call_count": 1
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-05-31T01:44:58.003089Z",
+    "agent_lines": 1,
+    "human_added": 98,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 99,
+    "agent_percentage": 1.0101010101010102
+  }
+}
