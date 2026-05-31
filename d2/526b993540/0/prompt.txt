@@ -1,0 +1,1 @@
+update .gitignore, 忽略所有日志文件
