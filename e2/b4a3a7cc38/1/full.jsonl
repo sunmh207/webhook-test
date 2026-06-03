@@ -1,0 +1,395 @@
+{
+  "info": {
+    "id": "ses_173c0018bffeHBx2yU2Aop3iJh",
+    "slug": "playful-comet",
+    "projectID": "14f8cdc1a757f63f7c5239c704ca05b7b103ffcf",
+    "directory": "/Users/sunminghui/Downloads/others/webhook-test",
+    "title": "New session - 2026-06-03T06:51:04.692Z",
+    "version": "1.2.14",
+    "summary": {
+      "additions": 1,
+      "deletions": 0,
+      "files": 2
+    },
+    "time": {
+      "created": 1780469464692,
+      "updated": 1780469471608
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1780469464737
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": ".gitignore",
+              "before": ".idea\n*.log\n.gstack/\n",
+              "after": ".idea\n*.log\n.gstack/\n__pycache__/\n",
+              "additions": 1,
+              "deletions": 0,
+              "status": "modified"
+            },
+            {
+              "file": "__pycache__/hello.cpython-314.pyc",
+              "before": "",
+              "after": "",
+              "additions": 0,
+              "deletions": 0,
+              "status": "deleted"
+            }
+          ]
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        },
+        "id": "msg_e8c3ffe8e001iuZQTQJ2XXWnFT",
+        "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "删除目录__pycache__，并将相关目录加到.gitignore",
+          "id": "prt_e8c3ffe8e002bSrVQSyDkfjDda",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffe8e001iuZQTQJ2XXWnFT"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1780469464747,
+          "completed": 1780469468725
+        },
+        "parentID": "msg_e8c3ffe8e001iuZQTQJ2XXWnFT",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/others/webhook-test",
+          "root": "/Users/sunminghui/Downloads/others/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 24203,
+          "input": 24026,
+          "output": 177,
+          "reasoning": 39,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_e8c3ffeab001Tjej1dhqfktpxf",
+        "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "c2af151632fcc2cd0b2b7f00fef5725fa1ac47e8",
+          "id": "prt_e8c40065a001ez4ieqVdITaisD",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to:\n1. Delete all `__pycache__` directories\n2. Add `__pycache__/` to `.gitignore`\n\nLet me do both tasks.",
+          "time": {
+            "start": 1780469467543,
+            "end": 1780469468607
+          },
+          "id": "prt_e8c400997001vjM51tYDaYA9el",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        },
+        {
+          "type": "tool",
+          "callID": "call_00_0O6SsnHvDuTB7a0SD7ap1419",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "find . -type d -name '__pycache__' -exec rm -rf {} + 2>/dev/null; echo \"done\"",
+              "description": "Delete all __pycache__ directories"
+            },
+            "output": "done\n",
+            "title": "Delete all __pycache__ directories",
+            "metadata": {
+              "output": "done\n",
+              "exit": 0,
+              "description": "Delete all __pycache__ directories",
+              "truncated": false
+            },
+            "time": {
+              "start": 1780469468324,
+              "end": 1780469468404
+            }
+          },
+          "id": "prt_e8c400b4e001iVrrt1Si5rwWTx",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        },
+        {
+          "type": "tool",
+          "callID": "call_01_uGuVMkSwY7OcZdcByAB42947",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/others/webhook-test/.gitignore"
+            },
+            "output": "<path>/Users/sunminghui/Downloads/others/webhook-test/.gitignore</path>\n<type>file</type>\n<content>1: .idea\n2: *.log\n3: .gstack/\n\n(End of file - total 3 lines)\n</content>",
+            "title": ".gitignore",
+            "metadata": {
+              "preview": ".idea\n*.log\n.gstack/",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1780469468554,
+              "end": 1780469468558
+            }
+          },
+          "id": "prt_e8c400cd9001eW93FA4pNpES47",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "54729426730cd27ee89b0e51fc8dfd5171e7ba81",
+          "cost": 0,
+          "tokens": {
+            "total": 24203,
+            "input": 24026,
+            "output": 177,
+            "reasoning": 39,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          },
+          "id": "prt_e8c400dbf001uKglpw5y5wR3El",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        },
+        {
+          "type": "patch",
+          "hash": "c2af151632fcc2cd0b2b7f00fef5725fa1ac47e8",
+          "files": [
+            "/Users/sunminghui/Downloads/others/webhook-test/__pycache__/hello.cpython-314.pyc"
+          ],
+          "id": "prt_e8c400e320012F18i627RNPi4e",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c3ffeab001Tjej1dhqfktpxf"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1780469468726,
+          "completed": 1780469471531
+        },
+        "parentID": "msg_e8c3ffe8e001iuZQTQJ2XXWnFT",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/others/webhook-test",
+          "root": "/Users/sunminghui/Downloads/others/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 24421,
+          "input": 91,
+          "output": 138,
+          "reasoning": 34,
+          "cache": {
+            "read": 24192,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_e8c400e36001hKLmEal2Gb91kx",
+        "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "54729426730cd27ee89b0e51fc8dfd5171e7ba81",
+          "id": "prt_e8c4012d60014Dmysq0Z7I2lOX",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c400e36001hKLmEal2Gb91kx"
+        },
+        {
+          "type": "reasoning",
+          "text": "I need to add `__pycache__/` to `.gitignore`. The file currently ends with `.gstack/`. I'll add it to the end.",
+          "time": {
+            "start": 1780469470447,
+            "end": 1780469471429
+          },
+          "id": "prt_e8c4014ef001FF8L2m1UqflkSM",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c400e36001hKLmEal2Gb91kx"
+        },
+        {
+          "type": "tool",
+          "callID": "REDACTED",
+          "tool": "edit",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/sunminghui/Downloads/others/webhook-test/.gitignore",
+              "oldString": ".gstack/",
+              "newString": ".gstack/\n__pycache__/"
+            },
+            "output": "Edit applied successfully.",
+            "title": ".gitignore",
+            "metadata": {
+              "diagnostics": {},
+              "diff": "Index: /Users/sunminghui/Downloads/others/webhook-test/.gitignore\n===================================================================\n--- /Users/sunminghui/Downloads/others/webhook-test/.gitignore\n+++ /Users/sunminghui/Downloads/others/webhook-test/.gitignore\n@@ -1,3 +1,4 @@\n .idea\n *.log\n .gstack/\n+__pycache__/\n",
+              "filediff": {
+                "file": "/Users/sunminghui/Downloads/others/webhook-test/.gitignore",
+                "before": ".idea\n*.log\n.gstack/\n",
+                "after": ".idea\n*.log\n.gstack/\n__pycache__/\n",
+                "additions": 1,
+                "deletions": 0
+              },
+              "truncated": false
+            },
+            "time": {
+              "start": 1780469471368,
+              "end": 1780469471399
+            }
+          },
+          "id": "prt_e8c401705001Y4POIp5a5SMKot",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c400e36001hKLmEal2Gb91kx"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "eef939a932678b1c43fc9c4ea51a06c0e9ad86bd",
+          "cost": 0,
+          "tokens": {
+            "total": 24421,
+            "input": 91,
+            "output": 138,
+            "reasoning": 34,
+            "cache": {
+              "read": 24192,
+              "write": 0
+            }
+          },
+          "id": "prt_e8c4018c5001LN32eji5vYUnLP",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c400e36001hKLmEal2Gb91kx"
+        },
+        {
+          "type": "patch",
+          "hash": "54729426730cd27ee89b0e51fc8dfd5171e7ba81",
+          "files": [
+            "/Users/sunminghui/Downloads/others/webhook-test/.gitignore"
+          ],
+          "id": "prt_e8c401928001UwR57XcQOaaiZF",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c400e36001hKLmEal2Gb91kx"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1780469471531,
+          "completed": 1780469473657
+        },
+        "parentID": "msg_e8c3ffe8e001iuZQTQJ2XXWnFT",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/sunminghui/Downloads/others/webhook-test",
+          "root": "/Users/sunminghui/Downloads/others/webhook-test"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 24472,
+          "input": 116,
+          "output": 36,
+          "reasoning": 8,
+          "cache": {
+            "read": 24320,
+            "write": 0
+          }
+        },
+        "finish": "stop",
+        "id": "msg_e8c40192b001ekw2TeW0XDusxP",
+        "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "eef939a932678b1c43fc9c4ea51a06c0e9ad86bd",
+          "id": "prt_e8c401cfc001F6yL6HZdSgEAB1",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c40192b001ekw2TeW0XDusxP"
+        },
+        {
+          "type": "reasoning",
+          "text": "Done. Let me summarize what happened.",
+          "time": {
+            "start": 1780469473164,
+            "end": 1780469473550
+          },
+          "id": "prt_e8c401f8c001CTfntsWc6XgWcJ",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c40192b001ekw2TeW0XDusxP"
+        },
+        {
+          "type": "text",
+          "text": "已删除所有 `__pycache__` 目录，并将 `__pycache__/` 添加到 `.gitignore`。",
+          "time": {
+            "start": 1780469473551,
+            "end": 1780469473551
+          },
+          "id": "prt_e8c40205e001GkiuDO3XinGzKM",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c40192b001ekw2TeW0XDusxP"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "eef939a932678b1c43fc9c4ea51a06c0e9ad86bd",
+          "cost": 0,
+          "tokens": {
+            "total": 24472,
+            "input": 116,
+            "output": 36,
+            "reasoning": 8,
+            "cache": {
+              "read": 24320,
+              "write": 0
+            }
+          },
+          "id": "prt_e8c40210f001zLIJaHepC2AVBT",
+          "sessionID": "ses_173c0018bffeHBx2yU2Aop3iJh",
+          "messageID": "msg_e8c40192b001ekw2TeW0XDusxP"
+        }
+      ]
+    }
+  ]
+}

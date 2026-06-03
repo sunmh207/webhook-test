@@ -3,8 +3,9 @@
   "checkpoint_id": "e2b4a3a7cc38",
   "strategy": "manual-commit",
   "branch": "review/hello-py",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
+    ".gitignore",
     "hello.py"
   ],
   "sessions": [
@@ -13,13 +14,19 @@
       "transcript": "/e2/b4a3a7cc38/0/full.jsonl",
       "content_hash": "/e2/b4a3a7cc38/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/e2/b4a3a7cc38/1/metadata.json",
+      "transcript": "/e2/b4a3a7cc38/1/full.jsonl",
+      "content_hash": "/e2/b4a3a7cc38/1/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
-    "input_tokens": 29807,
+    "input_tokens": 54040,
     "cache_creation_tokens": 0,
-    "cache_read_tokens": 1164514,
-    "output_tokens": 6409,
-    "api_call_count": 16
+    "cache_read_tokens": 1213026,
+    "output_tokens": 6760,
+    "api_call_count": 19
   }
 }
